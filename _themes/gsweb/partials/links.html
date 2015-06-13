@@ -1,0 +1,30 @@
+<div class="center section_wrapper">
+  <a href="/inventory">
+  <div class="mini-inventory">  
+    <h1>CURRENT INVENTORY</h1>
+      <ul>
+        {{ entries:listing folder="inventory" }}
+            <li>{{ theme:partial src="home-page-listings" use_context="true" }}</li>
+        {{ /entries:listing }}
+      </ul>
+    </div>
+  </a>  
+  <h1>COMING SOON</h1> 
+  <div class="coming_home"> 
+        <ul>
+          <li><h3>1989 BMW 325is</h3></li>
+          <li>250,000 Miles</li>
+        </ul>
+        <ul>
+          <li><h3>1989 BMW 325is</h3></li>
+          <li>115,000 Miles</li>
+        </ul>
+        <ul>
+          <li><h3>1988 BMW 325ix</h3></li>
+          <li>211,000 Miles</li>
+        </ul>
+  </div>
+    <a href="/inventory" class="pseudobutton white_text">SEE OUR CURRENT INVENTORY</a>
+    <p class="center">To learn more about our brokerage services or about one of our pre-owned vehicles, please contact us.</p>
+    <a href="/contact" class="pseudobutton white_text">CONTACT</a>
+</div>

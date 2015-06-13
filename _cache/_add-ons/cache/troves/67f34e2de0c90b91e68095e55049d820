@@ -1,0 +1,19 @@
+    <div class="calendar side-block odd">
+        <h2><a href="/calendar">Upcoming Events</a></h2>
+    
+                                                        <ul>
+                            
+                <li>
+                    <small>March 24th, 2015</small>
+                    <h3>Spring Dance</h3>
+                </li>
+            
+                                                                            
+                <li>
+                    <small>April 28th, 2015</small>
+                    <h3>Wood-Cutting Championships</h3>
+                </li>
+            
+                                    </ul>
+                                    
+    </div>

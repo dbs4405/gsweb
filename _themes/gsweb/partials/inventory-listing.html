@@ -1,0 +1,21 @@
+
+<a href="inventory/{{ slug }}">
+    <div class="listing">
+        {{ get_files in="/assets/img/{{ slug }}" limit="1"}}
+        <img src="{{ transform src='{{ file }}' }}" alt="{{ model }}" class="feature_image active"/>
+        <div class="text_overlay">
+            <h3>{{ model }}</h3>
+            <ul>
+                <li><strong>{{ price }}</strong></li>
+                <li><strong>{{ mileage }}</strong></li>
+                {{ if owner !=="" }}<li>{{ owner }}</li> {{ endif}}
+                {{ if engine !=="" }}<li>{{ engine }}</li> {{ endif}}
+                {{ if transmission !=="" }}<li>{{ transmission }}</li> {{ endif}}
+                {{ if drive !=="" }}<li>{{ drive }}</li> {{ endif }}
+            </ul>
+        </div>
+    {{ /get_files }}
+    <!-- {{ if !last }} <hr> {{ endif }} -->
+    <!-- <hr> -->
+    </div>
+</a>

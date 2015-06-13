@@ -1,0 +1,54 @@
+
+<div class="inventory"> 
+  <div class="outer">
+    <h1>PRE-OWNED SALES</h1>
+    <div class="listing_wrapper">
+      <p>Glen Shelly is a low volume auto broker and seller focused on the highest quality vehicles. We offer an informed and low-pressure sales environment resulting in a premium buying experience for you.</p><br>
+      <p>In addition to our brokerage services, we keep a small inventory of vehicles that we have acquired through wholesale and retail sources throughout the country. We typically deal in practical and efficient sedans and SUVs as well as high performance sports cars. We keep our inventory small so that we can focus on thorough mechanical and cosmetic preparation of the vehicles we select.</p>
+      <h1>CURRENT INVENTORY</h1>
+    </div>
+    <div class="feature_wrapper">
+    	{{ entries:listing folder="inventory" }}
+          {{ theme:partial src="inventory-listing" use_context="true" }}
+    	{{ /entries:listing }}
+    </div>
+    <div class="listing_wrapper">
+      <div class="coming center">
+        <h1>COMING SOON</h1> 
+        <h3>Contact us today to arrange a pre-listing reservation.</h3>
+        <div class="coming_list"> 
+          <ul>
+            <li><h3>1989 BMW 325is</h3></li>
+            <li>250,000 Miles</li>
+            <li>White / Natur Leatherette</li>
+            <li>5-Speed Manual</li>
+            <li>Complete Mechanical Restoration</li>
+          </ul>
+          <ul>
+            <li><h3>1989 BMW 325is</h3></li>
+            <li>115,000 Miles</li>
+            <li>Grey / Natur Leatherette</li>
+            <li>5-Speed Manual</li>
+            <li>Cleanest E30 I have Ever Seen</li>
+          </ul>
+          <ul>
+            <li><h3>1988 BMW 325ix</h3></li>
+            <li>211,000 Miles</li>
+            <li>Silver / Grey Leather</li>
+            <li>5-Speed Manual</li>
+            <li>Mechanically Solid Daily Driver</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <h1>PREVIOUS LISTINGS</h1>
+    </div>
+    <div class="section_wrapper_wide"> 
+      <ul class="sold-grid">
+        {{ entries:listing folder="inventory/sold" sort_dir="desc" }}
+        <li>{{ theme:partial src="sold-listing" use_context="true" }}</li>
+        {{ /entries:listing }}
+      </ul>
+    </div>
+  </div> 
+</div>

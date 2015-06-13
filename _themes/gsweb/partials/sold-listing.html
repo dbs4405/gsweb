@@ -1,0 +1,9 @@
+<div class="sold_listing">
+    {{ get_files in="/assets/img/sold/{{ slug }}" limit="1"}}
+        <h3>{{ model }}</h2> 
+        <img src="{{ transform src='{{ file }}' width='600' height='400' action="smart" }}" alt="{{ model }}" class="feature_image_sold" />
+    {{ /get_files }}
+    <p>SOLD</p>
+    <p>{{ mileage }}</p>
+    {{ if !last }} <hr class="sold-hr"> {{ endif }} 
+</div>

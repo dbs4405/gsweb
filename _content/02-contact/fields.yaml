@@ -1,0 +1,2 @@
+type: date                     # see http://statamic.com/learn/core-concepts/pages-and-entries
+_fieldset: post                # use the post fieldset

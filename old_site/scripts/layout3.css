@@ -1,0 +1,79 @@
+
+/* WB-LAYOUT-HEADER: This is the header section */
+	
+	#wb-layout-header-mask {
+		width:844px;
+		height:190px;		
+		background-color: transparent;
+		background-image: url(../images/layout3/header-bg.png);
+	}
+	
+	* html #wb-layout-header-mask {
+	    background-image:none;
+	    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src=images/layout3/header-bg.png));		
+	}
+				
+	#wb-layout-header-base {
+		display: none;
+	}
+
+
+	#wb-container-contentwrapper {
+		
+	}
+	
+	#wb-layout-footer {
+		position: relative;
+		top: 0px;
+	}
+	
+	#wb-navigation-subtop {
+		display: block;
+		width: 844px;
+		height: 52px;
+		background-color: transparent;
+		background-image: url(../images/layout3/navigation-bg.png);
+		background-position: top left;
+		background-repeat: no-repeat;
+		overflow:hidden;
+    }
+
+    * html #wb-navigation-subtop {
+	    background-image: url(../images/layout3/navigation-bg.jpg);		
+	}    
+    /* top nav structure */
+#wb-navigation-subtop div {
+	float: left;
+	padding: 16px 10px 0px;
+	height: 23px;
+}
+
+	#wb-navigation-subtop div.submenu {
+		padding: 0px;
+		height: auto;
+	}
+		#wb-navigation-subtop div.submenu div {
+			margin: 5px 8px !important;
+			clear: both;
+		}
+		
+		* html #wb-navigation-subtop div.submenu div {
+			margin: 0px !important;
+		}
+		
+				div.submenu a {
+					width: 145px;
+					
+				}
+	#wb-layout-sidebar { 
+        display: none;
+	}
+	
+	/* MAIN-CONTENT Area */
+	#wb-layout-main {
+		width:822px;
+		height: 100%;
+		margin-left: 5px;
+		float: left;
+		background-image: none;
+	}

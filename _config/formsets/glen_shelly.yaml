@@ -1,0 +1,70 @@
+###########################################################################################
+#
+#  Contact - RAVEN FORMSET
+#
+#  Formsets can override any default settings (raven.yaml) EXCEPT master_killswitch
+#
+###########################################################################################
+
+# Location (from root) to save form submissions
+submission_save_path: _submissions/
+
+# Fields allowed to be submitted in the form, automatically
+# purging anything and everything else
+allowed:
+  - name
+  - email
+  - phone
+  - preference
+  - message
+
+# You are not required to require fields, but once you do, any missing
+# from the POST will squash this submission and send a list of
+# missing fields to your {{ raven:errors }} tagpair
+required:
+  - name
+  - email
+  - phone
+  - message
+
+#Honeypot
+honeypot: website
+
+# What format the submitted form messages will be saved as.
+# Default is yaml, can be changed to md for MarkDown files
+submission_save_extension: yaml
+
+## Format for the filename saved for each submitted message
+filename_format: "{{name}}--{{day}}--{{month}}--{{year}}"
+
+# Apply validation rules to specific fields. Refer to documentation
+# for a full list of available rules and their format
+validate:
+  name: alpha
+  email: email
+  phone: phone
+
+# Error messages can be mapped to your fields and passed to the
+# template upon failure. They will be available here:
+#
+# {{ raven:error }}
+#     {{ invalid }}
+#         {{ field }} : {{ message }}
+#     {{ /invalid }}
+# {{ /raven:error }}
+#
+messages:
+  name: "can only consist of letters."
+  email: "does not seem to be a valid address."
+  phone: "number can only contain digits and should contain 10 digits."
+
+# Configure notification email
+email:
+  to: bhnr@glenshelly.com
+  from: "{{ email }}"
+  subject: "Glen Shelly: {{ name }}"
+  automagic: true
+  # html_template: emails/contact_html
+  # text_template: emails/contact_text
+
+

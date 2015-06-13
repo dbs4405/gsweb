@@ -1,0 +1,48 @@
+<!-- style (for gallery) -->
+{{ theme:css src="arrange" tag="true" }}
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+{{ get_files in="/assets/img/{{ slug }}/bg" extension='JPG' limit="1"}}
+
+<div class="full_listing" style="background-image: url( {{ file }} )">
+{{ /get_files }}
+    <div class="listing_bg">
+        {{ get_files in="/assets/img/{{ slug }}" extension='JPG' limit="1"}}
+        <img src="{{ transform src='{{ file }}' }}" class="feature_image_listing" alt="{{ title }} " />
+        <h1>{{ model }}</h1>
+        {{ /get_files }}
+        <div class="section_wrapper">        
+            <div class="car">
+                {{ content|widont }}
+            </div>
+            <div class="center">
+                {{ get_files in='/assets/img/{{ slug }}' extension='pdf'}}
+                <ul>
+                    <li>
+                        {{ if filename ~ "/car/i" }} 
+                            <a href="{{ file }}" class="pseudobutton-pdf">CarFax Vehicle History Report</a>  
+                        {{elseif filename ~ "/kelley/i"}}  
+                            <a href="{{ file }}" class="pseudobutton-pdf"> Kelley Blue Book Pricing Report</a> 
+                        {{ endif }}
+                    </li>
+                </ul>
+                {{ /get_files }}
+            </div>
+
+            {{ fancybox:head }}
+            <div class="gallery">
+                {{ get_files in="/assets/img/{{ slug }}" depth="== 0" extension='JPG' }}
+                    {{ if index % 2 != 0 }}<div class="row">{{ endif }}
+                        <div class="half column">
+                            <article class="entry" rel="gallery">
+                                <a href="{{ file }}">
+                                    <img src="{{ transform src='{{ file }}' width='300' }}" alt="{{ slug }} " />
+                                </a>
+                            </article>
+                        </div>
+                    {{ if index % 2 == 0 }}</div>{{ endif }} 
+                {{ /get_files }}
+            </div>
+        </div>
+    </div>
+</div>
