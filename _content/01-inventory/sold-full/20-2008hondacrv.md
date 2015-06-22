@@ -30,6 +30,8 @@ I am highly critical of our cars and try to describe every imperfection.
 
 
 ##Premium options
+
+- .
 - Heated Leather Seats
 - Heated Exterior Mirrors
 - Dual Climate Control
@@ -38,6 +40,8 @@ I am highly critical of our cars and try to describe every imperfection.
 - 6 Disc CD Changer
 
 ##Options
+
+- .
 - Air Conditioning
 - ABS Brakes
 - Auxiliary Power Outlet
@@ -63,6 +67,7 @@ I am highly critical of our cars and try to describe every imperfection.
 - Vehicle Stability Control
 
 ##Exterior
+
 The vehicle is in excellent condition with only a few nicks and scratches consistent with age and mileage. 
 
 There is a tiny dent (about the size of a quarter) in left front fender. 

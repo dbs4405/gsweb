@@ -31,12 +31,13 @@
 
             {{ fancybox:head }}
             <div class="gallery">
-                {{ get_files in="/assets/img/{{ slug }}" depth="== 0" extension='JPG' }}
+                {{ get_files in="/assets/img/{{ slug }}" depth="==0" extension='JPG' }}
                     {{ if index % 2 != 0 }}<div class="row">{{ endif }}
                         <div class="half column">
                             <article class="entry" rel="gallery">
                                 <a href="{{ file }}">
-                                    <img src="{{ transform src='{{ file }}' width='300' }}" alt="{{ slug }} " />
+                                    <!-- <img src="{{ transform src='{{ file }}' width='300' }}" alt="{{ slug }} " /> -->
+                                    <img src="{{ file }}" alt="{{ slug }} " />
                                 </a>
                             </article>
                         </div>
