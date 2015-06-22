@@ -44,6 +44,10 @@
     </div>
     <div class="section_wrapper_wide"> 
       <ul class="sold-grid">
+        {{ entries:listing folder="inventory/sold-full" sort_dir="desc" }}
+        <li>{{ theme:partial src="sold-full-listing" use_context="true" }}</li>
+        {{ /entries:listing }}
+        
         {{ entries:listing folder="inventory/sold" sort_dir="desc" }}
         <li>{{ theme:partial src="sold-listing" use_context="true" }}</li>
         {{ /entries:listing }}
