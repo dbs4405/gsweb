@@ -2,7 +2,7 @@
 _template: detail
 model: 2005 Volkswagen Passat GLX 4Motion AWD Wagon
 title: 2005 Volkswagen Passat GLX 4Motion AWD Wagon
-price: $10,000
+price: SOLD
 mileage: 55,000 miles
 owner: One owner
 engine: 2.8L V6 FI DOHC 30V Engine
